@@ -10,7 +10,7 @@ DisenKGE-DDI is a novel model designed for drug-drug interaction (DDI) predictio
 
 
 
-###  Source codes:
+#  Source codes:
 
 + data_loader.py: Loads and preprocesses datasets, prepares training and evaluation samples.
 + DisenLayer.py: Implements the disentangled graph layer, projecting node features into multiple latent semantic spaces.

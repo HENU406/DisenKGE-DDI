@@ -57,6 +57,7 @@ pip install scikit-learn
 ## Training model:
 
 + Install all the requirements from `requirements.txt.`
++ Execute sh ./preprocess.sh for extracting the dataset and setting up the folder hierarchy for experiments.
 + Commands for reproducing the reported results on drug-drug interaction prediction:
 
 ```sh

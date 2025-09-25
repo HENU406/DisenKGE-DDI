@@ -188,7 +188,7 @@ class CapsuleBase(BaseModel):
 
         return sub_emb, rel_emb, x, 0.
 
-class DisenKGE_DDI_DistMult(CapsuleBase):
+class DisenKGE_DistMult(CapsuleBase):
     def __init__(self, edge_index, edge_type, params=None):
         super(self.__class__, self).__init__(edge_index, edge_type, params.num_rel, params)
         self.drop = torch.nn.Dropout(self.p.hid_drop)
@@ -220,7 +220,7 @@ class DisenKGE_DDI_DistMult(CapsuleBase):
         return pred, corr
 
 
-class DisenKGE_DDI_InteractE(CapsuleBase):
+class DisenKGE_InteractE(CapsuleBase):
     def __init__(self, edge_index, edge_type, params=None):
         super(self.__class__, self).__init__(edge_index, edge_type, params.num_rel, params)
         self.inp_drop = torch.nn.Dropout(self.p.iinp_drop)
